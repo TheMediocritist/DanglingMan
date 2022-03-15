@@ -1,7 +1,7 @@
-name=Template
-author=You, Inc.
-description=A basic game template.
+name=Diver Dingus Rope Test
+author=TheMediocritist
+description=Testing vertlet integration for simple rope physics. Could be useful for fishing, grab games, kites etc.
 bundleID=com.yourcompany.TemplateGame
-version=1.0
+version=0.1
 buildNumber=100
 imagePath=SystemAssets
