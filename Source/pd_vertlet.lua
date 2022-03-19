@@ -10,7 +10,6 @@ local screen_height     = 240
 local screen_width      = 400
 local accel_threshold   = 0.01
 local accel_multiplier  = 100
-local dt                = 0.05 -- for now, assume 20fps constant
 local gfx = playdate.graphics
 
 class('Constraint').extends()
@@ -66,7 +65,6 @@ function Point:init(x, y)
 end
 
 function Point:update(dt)
-  local dt = .05
   self:add_force(0, self.mass * gravity)
   local vx = self.x - self.px
   local vy = self.y - self.py
@@ -175,8 +173,6 @@ function Physics:update(dt)
 	end
   end
 
-  --points[#self.points].mass = 10
-  -- points[#self.points]:update_accelerometer(calibrated_accelerometer)
 
   for index, point in ipairs(self.points) do
 	point:update(dt)
