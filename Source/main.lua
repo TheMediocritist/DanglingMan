@@ -2,7 +2,7 @@ import "CoreLibs/object"
 import "CoreLibs/graphics"
 import "CoreLibs/sprites"
 import "CoreLibs/timer"
-import "pd_vertlet"
+import "pd_verlet"
 
 local gfx = playdate.graphics
 local gravity           = 450
